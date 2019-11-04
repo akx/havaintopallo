@@ -21,6 +21,7 @@ def main():
         ap.error("no files to process")
 
     for filename in args.files:
+        print(filename, file=sys.stderr)
         with open(filename, "r") as infp:
             for triple in convert_measurement_xml(infp.read()):
                 row = [filename] + list(triple)
