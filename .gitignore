@@ -1,4 +1,5 @@
+!examples/*.xml
 *.csv
 *.py[cod]
 *.xml
-!examples/*.xml
+node_modules
