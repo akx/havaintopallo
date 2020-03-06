@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wfs:FeatureCollection
+        timeStamp="2020-03-06T13:23:42Z"
+        numberMatched="1"
+        numberReturned="1"
+        xmlns:wfs="http://www.opengis.net/wfs/2.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        xmlns:om="http://www.opengis.net/om/2.0"
+        xmlns:omso="http://inspire.ec.europa.eu/schemas/omso/3.0"
+        xmlns:ompr="http://inspire.ec.europa.eu/schemas/ompr/3.0"
+        xmlns:gml="http://www.opengis.net/gml/3.2"
+        xmlns:gmd="http://www.isotc211.org/2005/gmd"
+        xmlns:gco="http://www.isotc211.org/2005/gco"
+        xmlns:swe="http://www.opengis.net/swe/2.0"
+        xmlns:gmlcov="http://www.opengis.net/gmlcov/1.0"
+        xmlns:sam="http://www.opengis.net/sampling/2.0"
+        xmlns:sams="http://www.opengis.net/samplingSpatial/2.0"
+        xmlns:target="http://xml.fmi.fi/namespace/om/atmosphericfeatures/1.0"
+        xsi:schemaLocation="http://www.opengis.net/wfs/2.0 http://schemas.opengis.net/wfs/2.0/wfs.xsd
+    http://www.opengis.net/gmlcov/1.0 http://schemas.opengis.net/gmlcov/1.0/gmlcovAll.xsd
+    http://www.opengis.net/sampling/2.0 http://schemas.opengis.net/sampling/2.0/samplingFeature.xsd
+    http://www.opengis.net/samplingSpatial/2.0 http://schemas.opengis.net/samplingSpatial/2.0/spatialSamplingFeature.xsd
+    http://www.opengis.net/swe/2.0 http://schemas.opengis.net/sweCommon/2.0/swe.xsd
+    http://inspire.ec.europa.eu/schemas/omso/3.0 http://inspire.ec.europa.eu/schemas/omso/3.0/SpecialisedObservations.xsd
+    http://inspire.ec.europa.eu/schemas/ompr/3.0 http://inspire.ec.europa.eu/schemas/ompr/3.0/Processes.xsd
+    http://xml.fmi.fi/namespace/om/atmosphericfeatures/1.0 http://xml.fmi.fi/schema/om/atmosphericfeatures/1.0/atmosphericfeatures.xsd">
+
+    <wfs:member>
+        <omso:GridSeriesObservation
+                gml:id="WFS-I8P4.DGwORYVqGiex1Q354qHWgyJTowuYWbbpdOs2_llx4efR060aeWzDtdOufXlmw48rp1w36d3R0629dnTTw36d3THv7ZeWHPlhaWLLn07qmnbltSfwo0z9FfCY2PlzrUi0Kcd06aMmrhnZd2Spp25bUn8KNQ_eSHBm07sk7Lh5ZefSth2ackhmZ8u_Tk51mNmrhkyaujXl899_LJf39svLvy09MOLZliaWzL2y7KnnhlqZmzfjw7MtambTfjSV3XpmcNbbh8RNPPph3Y8tK1dCA1tunnz07s9TL46VjTsM5lbd.TLsrM0aeWzDtZXDDyw7a1I.XfwkZdOfR0rWqZdvDLyw9OvLLWhQ5ZefPryy1oSOu3Tk09PNbVfTuyRNPLLj6ad.6tavp3ZKfDLlyTadZ1fTuyVZtOs6vp3ZK02nWtNw.NO3rtr6d2StCvp3ZI_Xn0rQiZe9Dfp3dK3qm_ph2Q9m_rkh7.2XlW5Xy4emjLyp.duLfsZ1tTN_eHs39ckPf2y8q4JuXJp67Yezf1yQ9_bLyrckac.iHs39ckPf2y8q3qHLLj08NPTD0079zHRXNQ5Zcenhp6Yemnfug7d_Xd0r2pYcmnD00790fZvxYdkHHj67euzD00791d1LDk04emnfumV4OPH129dmHpp37qwwqWHJpw9NO_dOy9KfXlmw48syvBx4.u3rsw9NO_dWGFSw5NOHpp37p2XpT68s2HHlp14OPH129dmHpp37q.KWHJpw9NO_dE05s3Xnlg48fXb12YemnfurWmYd2SnlwzcPPW3OfTfyy5OPXLy839OSvMLNt0unWbfyy48PPo6daNPLZh2unXPryzYceV064b9O7o6dbeuzpp4b9O7pj39svLDnytDpp25afTLwn5CaHTTty2t.7LWNVqQwA--">
+            <om:phenomenonTime>
+                <gml:TimePeriod gml:id="time-interval-1-1">
+                    <gml:beginPosition>2020-03-06T14:00:00Z</gml:beginPosition>
+                    <gml:endPosition>2020-03-08T01:00:00Z</gml:endPosition>
+                </gml:TimePeriod>
+            </om:phenomenonTime>
+            <om:resultTime>
+                <gml:TimeInstant gml:id="time-1-1">
+                    <gml:timePosition>2020-03-06T09:30:14Z</gml:timePosition>
+                </gml:TimeInstant>
+            </om:resultTime>
+
+            <om:procedure xlink:href="http://xml.fmi.fi/inspire/process/hirlam"/>
+            <om:parameter>
+                <om:NamedValue>
+                    <om:name xlink:href="http://xml.fmi.fi/inspire/process/hirlam"/>
+                    <om:value>
+                        <gml:TimeInstant gml:id="analysis-time-1-1">
+                            <gml:timePosition>2020-03-06T06:00:00Z</gml:timePosition>
+                        </gml:TimeInstant>
+                    </om:value>
+                </om:NamedValue>
+            </om:parameter>
+            <om:observedProperty
+                    xlink:href="http://opendata.fmi.fi/meta?observableProperty=forecast&amp;param=GeopHeight,Temperature,Pressure,Humidity,WindDirection,WindSpeedMS,WindUMS,WindVMS,MaximumWind,WindGust,DewPoint,TotalCloudCover,WeatherSymbol3,LowCloudCover,MediumCloudCover,HighCloudCover,Precipitation1h,PrecipitationAmount,RadiationGlobalAccumulation,RadiationLWAccumulation,RadiationNetSurfaceLWAccumulation,RadiationNetSurfaceSWAccumulation,RadiationDiffuseAccumulation,LandSeaMask&amp;language=eng"/>
+            <om:featureOfInterest>
+                <sams:SF_SpatialSamplingFeature gml:id="enn-s-1-1-">
+                    <sam:sampledFeature>
+                        <target:LocationCollection gml:id="sampled-target-1-1">
+                            <target:member>
+                                <target:Location gml:id="forloc-geoid-658225-pos">
+                                    <gml:identifier codeSpace="http://xml.fmi.fi/namespace/stationcode/geoid">658225
+                                    </gml:identifier>
+                                    <gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/name">Helsinki
+                                    </gml:name>
+                                    <gml:name codeSpace="http://xml.fmi.fi/namespace/locationcode/geoid">658225
+                                    </gml:name>
+                                    <target:representativePoint xlink:href="#point-658225"/>
+                                    <target:country codeSpace="http://xml.fmi.fi/namespace/location/country">Finland
+                                    </target:country>
+                                    <target:timezone>Europe/Helsinki</target:timezone>
+                                    <target:region codeSpace="http://xml.fmi.fi/namespace/location/region">Finland
+                                    </target:region>
+                                </target:Location>
+                            </target:member>
+                        </target:LocationCollection>
+                    </sam:sampledFeature>
+                    <sams:shape>
+                        <gml:MultiPoint gml:id="sf-1-1-">
+                            <gml:pointMembers>
+                                <gml:Point gml:id="point-658225" srsName="http://www.opengis.net/def/crs/EPSG/0/4258"
+                                           srsDimension="2">
+                                    <gml:name>Helsinki</gml:name>
+                                    <gml:pos>60.16952 24.93545</gml:pos>
+                                </gml:Point>
+                            </gml:pointMembers>
+                        </gml:MultiPoint>
+                    </sams:shape>
+                </sams:SF_SpatialSamplingFeature>
+            </om:featureOfInterest>
+            <om:result>
+                <gmlcov:MultiPointCoverage gml:id="mpcv-1-1">
+                    <gml:domainSet>
+                        <gmlcov:SimpleMultiPoint gml:id="mp-1-1"
+                                                 srsName="http://xml.fmi.fi/gml/crs/compoundCRS.php?crs=4258&amp;time=unixtime"
+                                                 srsDimension="3">
+                            <gmlcov:positions>
+                                60.16952 24.93545 1583503200
+                                60.16952 24.93545 1583506800
+                                60.16952 24.93545 1583510400
+                                60.16952 24.93545 1583514000
+                                60.16952 24.93545 1583517600
+                                60.16952 24.93545 1583521200
+                                60.16952 24.93545 1583524800
+                                60.16952 24.93545 1583528400
+                                60.16952 24.93545 1583532000
+                                60.16952 24.93545 1583535600
+                                60.16952 24.93545 1583539200
+                                60.16952 24.93545 1583542800
+                                60.16952 24.93545 1583546400
+                                60.16952 24.93545 1583550000
+                                60.16952 24.93545 1583553600
+                                60.16952 24.93545 1583557200
+                                60.16952 24.93545 1583560800
+                                60.16952 24.93545 1583564400
+                                60.16952 24.93545 1583568000
+                                60.16952 24.93545 1583571600
+                                60.16952 24.93545 1583575200
+                                60.16952 24.93545 1583578800
+                                60.16952 24.93545 1583582400
+                                60.16952 24.93545 1583586000
+                                60.16952 24.93545 1583589600
+                                60.16952 24.93545 1583593200
+                                60.16952 24.93545 1583596800
+                                60.16952 24.93545 1583600400
+                                60.16952 24.93545 1583604000
+                                60.16952 24.93545 1583607600
+                                60.16952 24.93545 1583611200
+                                60.16952 24.93545 1583614800
+                                60.16952 24.93545 1583618400
+                                60.16952 24.93545 1583622000
+                                60.16952 24.93545 1583625600
+                                60.16952 24.93545 1583629200
+                            </gmlcov:positions>
+                        </gmlcov:SimpleMultiPoint>
+                    </gml:domainSet>
+                    <gml:rangeSet>
+                        <gml:DataBlock>
+                            <gml:rangeParameters/>
+                            <gml:doubleOrNilReasonTupleList>
+                                7.03 4.05 1006.32 74.4 232.0 6.25 3.23 5.34 6.4 8.72 -1.66 0.0 1.0 0.0 0.0 0.0 0.0 0.0
+                                9123305.0 6830086.0 -2534364.0 7642439.5 1995452.13 0.27
+                                7.03 3.49 1006.93 77.87 231.0 6.1 2.97 5.32 6.4 8.43 -1.33 0.0 1.0 0.0 0.0 0.0 0.0 0.0
+                                9633511.0 7676162.0 -2852485.5 8059655.5 2134351.25 0.27
+                                7.03 2.67 1007.35 82.72 236.0 5.48 2.95 4.6 6.4 7.56 -0.98 0.0 1.0 0.0 0.0 0.0 0.0 0.0
+                                9741306.0 8517680.0 -3170395.75 8147830.0 2180632.25 0.27
+                                7.03 1.73 1007.8 87.97 245.0 4.09 2.75 3.02 6.4 5.64 -0.73 0.0 1.0 0.0 0.0 0.0 0.0 0.0
+                                9741306.0 9347971.0 -3487122.0 8147830.0 2180632.25 0.27
+                                7.03 0.89 1008.21 92.44 241.0 3.26 2.08 2.54 6.41 4.46 -0.61 0.0 1.0 0.0 0.0 0.0 0.0 0.0
+                                9741306.0 10171797.0 -3806429.5 8147830.0 2180632.25 0.27
+                                7.03 0.54 1008.94 94.39 242.0 3.5 2.27 2.67 3.51 4.82 -0.57 2.87 1.0 0.0 0.0 3.3 0.0 0.0
+                                9741306.0 10994420.0 -4123793.25 8147830.0 2180632.25 0.27
+                                7.03 0.21 1009.85 94.75 243.0 3.47 2.34 2.58 3.52 4.79 -0.82 0.0 1.0 0.0 0.0 0.0 0.0 0.0
+                                9741306.0 11813674.0 -4443745.0 8147830.0 2180632.25 0.27
+                                7.03 -0.08 1010.23 95.55 253.0 2.56 2.02 1.62 3.54 3.56 -0.94 7.19 1.0 0.0 0.0 7.8 0.0
+                                0.0 9741306.0 12631413.0 -4758040.0 8147830.0 2180632.25 0.27
+                                7.03 -0.78 1010.5 96.85 306.0 1.6 1.53 -0.47 3.54 2.33 -1.39 18.2 1.0 0.0 0.0 16.6 0.0
+                                0.0 9741306.0 13448056.0 -5078266.5 8147830.0 2180632.25 0.27
+                                7.03 -1.3 1010.81 97.12 353.0 1.03 0.49 -0.89 3.54 1.68 -1.85 91.09 3.0 0.0 0.0 91.5 0.0
+                                0.0 9741306.0 14276561.0 -5384374.0 8147830.0 2180632.25 0.27
+                                7.03 -1.51 1011.31 96.9 136.0 0.38 -0.34 0.03 3.54 0.87 -2.11 87.99 3.0 0.0 0.0 87.5 0.0
+                                0.0 9741306.0 15111269.0 -5680223.0 8147830.0 2180632.25 0.27
+                                7.03 -1.36 1011.36 96.54 143.0 0.84 -0.72 0.43 3.54 1.29 -2.03 99.7 3.0 3.2 99.7 76.9
+                                0.0 0.0 9741306.0 15956575.0 -5966999.5 8147830.0 2180632.25 0.27
+                                7.03 -1.32 1011.23 96.71 74.0 1.16 -0.93 -0.67 3.54 1.62 -1.95 97.22 3.0 14.7 52.6 95.5
+                                0.0 0.0 9741306.0 16819612.0 -6225501.0 8147830.0 2180632.25 0.27
+                                7.03 -1.38 1011.17 97.9 60.0 2.04 -1.2 -1.66 3.54 2.9 -1.78 99.61 3.0 24.5 99.5 88.5 0.0
+                                0.0 9741306.0 17723238.0 -6454468.5 8147830.0 2180632.25 0.27
+                                7.03 -1.2 1011.61 97.75 90.0 1.96 -1.78 -0.79 3.54 2.76 -1.63 94.8 3.0 35.1 64.0 93.3
+                                0.0 0.0 9741306.0 18677648.0 -6636316.5 8147830.0 2180632.25 0.27
+                                7.03 -1.15 1011.87 98.25 73.0 1.96 -1.43 -1.32 3.53 2.76 -1.48 100.0 3.0 64.3 94.0 99.9
+                                0.0 0.0 9741306.0 19610614.0 -6835273.5 8147830.0 2180632.25 0.27
+                                7.03 -0.96 1012.32 98.21 60.0 2.35 -1.32 -1.93 3.53 3.38 -1.3 100.0 3.0 59.0 99.9 99.9
+                                0.0 0.0 9811082.0 20648904.0 -6936289.0 8203236.5 2250408.25 0.27
+                                7.03 -0.41 1012.71 97.45 48.0 2.7 -1.1 -2.43 2.67 3.86 -0.9 100.0 3.0 35.5 99.9 99.9 0.0
+                                0.0 10102203.0 21700922.0 -7025274.0 8438867.0 2539079.5 0.27
+                                7.03 0.71 1012.69 95.94 57.0 3.16 -1.84 -2.55 3.15 4.5 -0.09 100.0 3.0 4.2 99.9 99.9 0.0
+                                0.0 10701671.0 22748300.0 -7124295.5 8939954.0 3141930.75 0.27
+                                7.03 2.11 1012.46 86.87 72.0 3.42 -2.67 -2.16 3.45 4.95 -0.6 100.0 3.0 0.0 99.9 99.9 0.0
+                                0.0 11494601.0 23819124.0 -7214564.0 9597552.0 3930909.5 0.27
+                                7.03 2.89 1012.67 80.37 78.0 3.76 -3.21 -1.95 3.76 5.38 -1.32 100.0 3.0 0.0 99.9 94.1
+                                0.0 0.0 12388689.0 24918126.0 -7285464.0 10343600.0 4817099.0 0.27
+                                7.03 3.49 1012.5 75.82 80.0 4.29 -3.75 -2.05 4.28 6.17 -1.84 100.0 3.0 0.2 99.9 0.0 0.0
+                                0.0 13491597.0 25997008.0 -7378256.0 11280556.0 5931128.0 0.27
+                                7.03 3.65 1012.14 73.96 76.0 4.73 -3.96 -2.57 4.72 6.7 -2.16 100.0 3.0 0.0 99.9 0.0 0.0
+                                0.0 14494194.0 27105386.0 -7443475.5 12117431.0 6924541.5 0.27
+                                7.03 3.76 1011.52 73.39 76.0 4.86 -4.02 -2.76 4.89 6.86 -2.19 100.0 3.0 0.0 99.9 0.0 0.0
+                                0.0 15392015.0 28202176.0 -7522811.5 12875827.0 7832275.0 0.27
+                                7.03 3.86 1011.4 71.67 74.0 4.55 -3.68 -2.67 4.89 6.37 -2.55 100.0 3.0 0.0 99.9 0.0 0.0
+                                0.0 16135881.0 29254672.0 -7641321.5 13489182.0 8566229.0 0.27
+                                7.03 3.51 1011.53 72.58 75.0 4.38 -3.61 -2.49 4.89 6.1 -2.64 100.0 3.0 0.0 99.9 0.0 0.0
+                                0.0 16579528.0 30284352.0 -7788687.0 13862112.0 9019788.0 0.27
+                                7.03 2.8 1011.52 75.45 72.0 3.73 -2.92 -2.38 4.89 5.15 -2.6 100.0 3.0 0.0 99.9 0.0 0.0
+                                0.0 16696082.0 31270776.0 -7957627.0 13954674.0 9134476.0 0.27
+                                7.03 1.86 1011.57 79.31 70.0 3.32 -2.47 -2.2 4.89 4.45 -2.57 78.74 3.0 0.0 87.4 0.0 0.0
+                                0.0 16696082.0 32189590.0 -8193501.0 13954674.0 9134476.0 0.27
+                                7.03 1.11 1011.86 81.94 55.0 2.71 -1.42 -2.31 4.89 3.63 -2.68 85.28 3.0 0.0 90.8 0.0 0.0
+                                0.0 16696082.0 33046658.0 -8478481.0 13954674.0 9134476.0 0.27
+                                7.03 0.5 1011.98 84.86 37.0 2.75 -0.56 -2.65 2.77 3.71 -2.62 99.95 3.0 0.0 99.8 0.0 0.0
+                                0.0 16696082.0 33912340.0 -8749178.0 13954674.0 9134476.0 0.27
+                                7.03 0.1 1011.9 86.02 32.0 2.98 -0.4 -2.92 2.95 4.13 -2.76 93.07 3.0 0.0 95.3 0.0 0.0
+                                0.0 16696082.0 34872000.0 -8937202.0 13954674.0 9134476.0 0.27
+                                7.03 0.01 1011.83 84.81 24.0 3.35 -0.02 -3.32 3.33 4.67 -3.11 85.78 3.0 10.6 89.0 0.0
+                                0.0 0.0 16696082.0 35780332.0 -9173187.0 13954674.0 9134476.0 0.27
+                                7.03 -0.1 1011.69 83.81 23.0 3.71 -0.08 -3.68 3.69 5.2 -3.43 100.0 3.0 52.4 99.9 0.0 0.0
+                                0.0 16696082.0 36732832.0 -9355641.0 13954674.0 9134476.0 0.27
+                                7.03 -0.11 1011.41 84.69 45.0 3.74 -1.32 -3.49 3.77 5.3 -3.25 83.1 3.0 6.9 87.5 0.0 0.0
+                                0.0 16696082.0 37677164.0 -9557284.0 13954674.0 9134476.0 0.27
+                                7.03 -0.56 1011.35 88.05 35.0 3.51 -0.67 -3.47 3.77 5.05 -2.96 95.83 3.0 0.0 97.2 0.0
+                                0.0 0.0 16696082.0 38588648.0 -9776130.0 13954674.0 9134476.0 0.27
+                                7.03 -1.0 1011.1 88.61 23.0 3.63 0.01 -3.63 3.78 5.18 -3.28 100.0 3.0 0.0 99.9 0.0 0.0
+                                0.0 16696082.0 39503040.0 -10002798.0 13954674.0 9134476.0 0.27
+                            </gml:doubleOrNilReasonTupleList>
+                        </gml:DataBlock>
+                    </gml:rangeSet>
+                    <gml:coverageFunction>
+                        <gml:CoverageMappingRule>
+                            <gml:ruleDefinition>Linear</gml:ruleDefinition>
+                        </gml:CoverageMappingRule>
+                    </gml:coverageFunction>
+                    <gmlcov:rangeType>
+                        <swe:DataRecord>
+                            <swe:field name="GeopHeight"
+                                       xlink:href="http://opendata.fmi.fi/meta?observableProperty=forecast&amp;param=GeopHeight&amp;language=eng"/>
+                            <swe:field name="Temperature"
+                                       xlink:href="http://opendata.fmi.fi/meta?observableProperty=forecast&amp;param=Temperature&amp;language=eng"/>
+                            <swe:field name="Pressure"
+                                       xlink:href="http://opendata.fmi.fi/meta?observableProperty=forecast&amp;param=Pressure&amp;language=eng"/>
+                            <swe:field name="Humidity"
+                                       xlink:href="http://opendata.fmi.fi/meta?observableProperty=forecast&amp;param=Humidity&amp;language=eng"/>
+                            <swe:field name="WindDirection"
+                                       xlink:href="http://opendata.fmi.fi/meta?observableProperty=forecast&amp;param=WindDirection&amp;language=eng"/>
+                            <swe:field name="WindSpeedMS"
+                                       xlink:href="http://opendata.fmi.fi/meta?observableProperty=forecast&amp;param=WindSpeedMS&amp;language=eng"/>
+                            <swe:field name="WindUMS"
+                                       xlink:href="http://opendata.fmi.fi/meta?observableProperty=forecast&amp;param=WindUMS&amp;language=eng"/>
+                            <swe:field name="WindVMS"
+                                       xlink:href="http://opendata.fmi.fi/meta?observableProperty=forecast&amp;param=WindVMS&amp;language=eng"/>
+                            <swe:field name="MaximumWind"
+                                       xlink:href="http://opendata.fmi.fi/meta?observableProperty=forecast&amp;param=MaximumWind&amp;language=eng"/>
+                            <swe:field name="WindGust"
+                                       xlink:href="http://opendata.fmi.fi/meta?observableProperty=forecast&amp;param=WindGust&amp;language=eng"/>
+                            <swe:field name="DewPoint"
+                                       xlink:href="http://opendata.fmi.fi/meta?observableProperty=forecast&amp;param=DewPoint&amp;language=eng"/>
+                            <swe:field name="TotalCloudCover"
+                                       xlink:href="http://opendata.fmi.fi/meta?observableProperty=forecast&amp;param=TotalCloudCover&amp;language=eng"/>
+                            <swe:field name="WeatherSymbol3"
+                                       xlink:href="http://opendata.fmi.fi/meta?observableProperty=forecast&amp;param=WeatherSymbol3&amp;language=eng"/>
+                            <swe:field name="LowCloudCover"
+                                       xlink:href="http://opendata.fmi.fi/meta?observableProperty=forecast&amp;param=LowCloudCover&amp;language=eng"/>
+                            <swe:field name="MediumCloudCover"
+                                       xlink:href="http://opendata.fmi.fi/meta?observableProperty=forecast&amp;param=MediumCloudCover&amp;language=eng"/>
+                            <swe:field name="HighCloudCover"
+                                       xlink:href="http://opendata.fmi.fi/meta?observableProperty=forecast&amp;param=HighCloudCover&amp;language=eng"/>
+                            <swe:field name="Precipitation1h"
+                                       xlink:href="http://opendata.fmi.fi/meta?observableProperty=forecast&amp;param=Precipitation1h&amp;language=eng"/>
+                            <swe:field name="PrecipitationAmount"
+                                       xlink:href="http://opendata.fmi.fi/meta?observableProperty=forecast&amp;param=PrecipitationAmount&amp;language=eng"/>
+                            <swe:field name="RadiationGlobalAccumulation"
+                                       xlink:href="http://opendata.fmi.fi/meta?observableProperty=forecast&amp;param=RadiationGlobalAccumulation&amp;language=eng"/>
+                            <swe:field name="RadiationLWAccumulation"
+                                       xlink:href="http://opendata.fmi.fi/meta?observableProperty=forecast&amp;param=RadiationLWAccumulation&amp;language=eng"/>
+                            <swe:field name="RadiationNetSurfaceLWAccumulation"
+                                       xlink:href="http://opendata.fmi.fi/meta?observableProperty=forecast&amp;param=RadiationNetSurfaceLWAccumulation&amp;language=eng"/>
+                            <swe:field name="RadiationNetSurfaceSWAccumulation"
+                                       xlink:href="http://opendata.fmi.fi/meta?observableProperty=forecast&amp;param=RadiationNetSurfaceSWAccumulation&amp;language=eng"/>
+                            <swe:field name="RadiationDiffuseAccumulation"
+                                       xlink:href="http://opendata.fmi.fi/meta?observableProperty=forecast&amp;param=RadiationDiffuseAccumulation&amp;language=eng"/>
+                            <swe:field name="LandSeaMask"
+                                       xlink:href="http://opendata.fmi.fi/meta?observableProperty=forecast&amp;param=LandSeaMask&amp;language=eng"/>
+                        </swe:DataRecord>
+                    </gmlcov:rangeType>
+                </gmlcov:MultiPointCoverage>
+            </om:result>
+
+        </omso:GridSeriesObservation>
+    </wfs:member>
+
+</wfs:FeatureCollection>
