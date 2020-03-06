@@ -1,4 +1,4 @@
-from havaintopallo.conversion import convert_grid_xml, convert_compound_crs_unixtime, convert_measurement_xml
+from havaintopallo.conversion import convert_grid_xml, convert_compound_crs_unixtime, convert_point_xml
 
 
 def test_grid_conversion():
@@ -9,5 +9,5 @@ def test_grid_conversion():
 
 def test_point_conversion():
     with open("examples/point_harmonie.xml") as infp:
-        obs = list(convert_measurement_xml(infp.read()))
+        obs = list(convert_point_xml(infp.read()))
         assert obs  # TODO: Improve test

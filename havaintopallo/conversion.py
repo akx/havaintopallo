@@ -28,7 +28,7 @@ Spatiotemporal = namedtuple(
 )
 
 
-def convert_measurement_xml(xml_string) -> Iterable[PointTimeSeriesObservation]:
+def convert_point_xml(xml_string) -> Iterable[PointTimeSeriesObservation]:
     xtree: ET.Element = ET.fromstring(xml_string)
     for ptso in xtree.findall(
         "WFS:member/OMSO:PointTimeSeriesObservation", namespaces=namespaces

@@ -3,7 +3,7 @@ import csv
 import json
 import sys
 
-from havaintopallo.conversion import convert_measurement_xml
+from havaintopallo.conversion import convert_point_xml
 
 
 def main():
@@ -23,7 +23,7 @@ def main():
     for filename in args.files:
         print(filename, file=sys.stderr)
         with open(filename, "r") as infp:
-            for triple in convert_measurement_xml(infp.read()):
+            for triple in convert_point_xml(infp.read()):
                 row = [filename] + list(triple)
                 if args.format == "csv":
                     cw.writerow(row)
