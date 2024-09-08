@@ -16,9 +16,7 @@ def generate_date_pairs(start_date, end_date, delta):
 
 def parse_args():
     ap = argparse.ArgumentParser()
-    ap.add_argument(
-        "--fmisid", required=True, help="FMI location ID (100949 for Turku!)"
-    )
+    ap.add_argument("--fmisid", required=True, help="FMI location ID (100949 for Turku!)")
     ap.add_argument("--start-date", required=True, help="Start date (ISO format)")
     ap.add_argument("--end-date", required=True, help="End date (ISO format)")
     ap.add_argument("--dest-dir", default=".")
@@ -41,9 +39,7 @@ def main():
                 end_time=datetime.datetime.combine(d2, midnight),
             ),
         )
-        for (d1, d2) in generate_date_pairs(
-            start_date, end_date, datetime.timedelta(days=7)
-        )
+        for (d1, d2) in generate_date_pairs(start_date, end_date, datetime.timedelta(days=7))
     ]
     # TODO: could add multiprocessing here :)
     os.makedirs(args.dest_dir, exist_ok=True)
@@ -52,7 +48,7 @@ def main():
         full_filename = os.path.join(args.dest_dir, filename)
         print(f"{i:d} / {len(jobs):d} – {full_filename} ...")
         if os.path.isfile(full_filename):
-            print(f"  -> [*] skipping, already exists")
+            print("  -> [*] skipping, already exists")
             continue
         xml = download_fmi_observation_xml(requests_session=sess, **job)
         with open(full_filename, "w") as outf:

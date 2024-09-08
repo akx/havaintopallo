@@ -1,4 +1,8 @@
-from havaintopallo.conversion import convert_grid_xml, convert_compound_crs_unixtime, convert_point_xml
+from havaintopallo.conversion import (
+    convert_grid_xml,
+    convert_compound_crs_unixtime,
+    convert_point_xml,
+)
 
 
 def test_grid_conversion():
