@@ -5,7 +5,7 @@ description = "Utilities for downloading & converting FMI data (observation time
 readme = "README.md"
 requires-python = ">=3.9"
 dependencies = [
-    "requests",
+    "httpx>=0.28.0",
 ]
 
 [project.optional-dependencies]
@@ -19,3 +19,8 @@ build-backend = "hatchling.build"
 
 [tool.ruff]
 line-length = 100
+
+[tool.ruff.lint]
+extend-select = [
+    "I",
+]

@@ -2,7 +2,8 @@ import argparse
 import datetime
 import gzip
 import os
-import requests
+
+import httpx
 
 from havaintopallo.download import download_fmi_observation_xml
 
@@ -60,24 +61,24 @@ def main():
         )
         for (d1, d2) in generate_date_pairs(start_date, end_date, datetime.timedelta(days=7))
     ]
-    # TODO: could add multiprocessing here :)
     os.makedirs(args.dest_dir, exist_ok=True)
-    sess = requests.Session()
     comp = args.compression
-    for i, (filename, job) in enumerate(jobs, 1):
-        full_filename = os.path.join(args.dest_dir, filename)
-        if comp != "none":
-            if comp == "gzip":
-                full_filename += ".gz"
-            elif comp == "zstd":
-                full_filename += ".zst"
+    with httpx.Client() as client:
+        # TODO: could add multiprocessing here :)
+        for i, (filename, job) in enumerate(jobs, 1):
+            full_filename = os.path.join(args.dest_dir, filename)
+            if comp != "none":
+                if comp == "gzip":
+                    full_filename += ".gz"
+                elif comp == "zstd":
+                    full_filename += ".zst"
 
-        print(f"{i:d} / {len(jobs):d} – {full_filename} ...")
-        if os.path.isfile(full_filename):
-            print("  -> [*] skipping, already exists")
-            continue
-        xml = download_fmi_observation_xml(requests_session=sess, **job)
-        write_file(full_filename, xml, comp)
+            print(f"{i:d} / {len(jobs):d} – {full_filename} ...")
+            if os.path.isfile(full_filename):
+                print("  -> [*] skipping, already exists")
+                continue
+            xml = download_fmi_observation_xml(httpx_client=client, **job)
+            write_file(full_filename, xml, comp)
 
 
 def write_file(full_filename: str, xml_text: str, compression):

@@ -1,15 +1,15 @@
 import datetime
 
-import requests
+import httpx
 
 
 def download_fmi_observation_xml(
-    requests_session: requests.Session,
+    httpx_client: httpx.Client,
     fmisid: str,
     start_time: datetime.datetime,
     end_time: datetime.datetime,
 ) -> str:
-    resp = requests_session.get(
+    resp = httpx_client.get(
         "https://opendata.fmi.fi/wfs",
         params={
             "request": "getFeature",
