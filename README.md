@@ -8,8 +8,22 @@ Caveat developer
 
 Please heed FMI's API usage limits and data licenses when using this software.
 
-Usage
------
+Usage (with `uv`)
+-----------------
+
+See https://docs.astral.sh/uv/ on how to install `uv`.
+
+* Find the FMISID code for the location you're interested in. For example, Turku Artukainen is 100949.
+  * See: https://www.ilmatieteenlaitos.fi/havaintoasemat
+* Download some data:
+  `uv run -m havaintopallo.tools.download_ptso_xml --fmisid=100949 --start-date=2025-01-01 --end-date=2025-03-01 --dest-dir=turku2025`
+* Convert the arcane XML into JSONL (or CSV):
+  * `uv run -m havaintopallo.tools.convert_ptso_xml turku2025/*.xml > turku2025.jsonl`
+  * `uv run -m havaintopallo.tools.convert_ptso_xml -f csv turku2025/*.xml > turku2025.csv`
+* Apply data science!
+
+Usage (without `uv`)
+--------------------
 
 * Set up a Python 3.9+ virtualenv.
 * Install requirements: `pip install -e .`
