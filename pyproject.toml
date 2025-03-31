@@ -8,6 +8,11 @@ dependencies = [
     "requests",
 ]
 
+[project.optional-dependencies]
+zstd = [
+    "zstandard>=0.23.0",
+]
+
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
